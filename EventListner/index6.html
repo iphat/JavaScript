@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,body{
+        width: 100%;
+        height: 100%;
+        background-color: #222;
+    }
+    /* hide the bar showing when overflow of content  */
+    body{
+        position: relative;
+        overflow: hidden;
+    }
+    /* here position is absolute so top and left in event4.js worked */
+    #abcd{
+        /* position:absolute; */
+        transition: all cubic-bezier(0.19, 1, 0.22, 1);
+        width: 200px;
+        height: 200px;
+        background-color:red;
+    }
+    /* form{
+        margin-top: 180px;
+    } */
+   
+</style>
+<body>
+    <!--  mouseover, mouseout, mousemove -->
+    <div id="abcd"></div>
+    <br><br>
+
+<!-- event object -->
+    <form action="">
+        <input type="name">
+        <input type="password">
+        <input type="submit">
+    </form>
+
+
+
+    <script src="event4.js"></script>
+</body>
+</html>

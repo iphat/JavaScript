@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    small{
+        color:red;
+    }
+    #hide{
+        display: none;
+    }
+</style>
+<body>
+    <h1>Form</h1>
+    <form action="">
+        <!-- 'pattern' in required is also a form of validation -->
+        <!-- <input required pattern="[a-z],{3,8}" type="text" placeholder="hi"> -->
+        <input id="name" type="text"placeholder="name" ><br>
+        <div id="hide">
+            <small>your name should be grater than 2 character</small><br>
+        </div>
+        <br>
+        
+        <input type="email"placeholder="email" ><br><br>
+        <input type="password"placeholder="password" ><br><br>
+        <select name="" id=""><br><br>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="others">others</option>
+        </select><br><br>
+        <textarea placeholder="tell us about you" ></textarea>
+        <br><br>
+        <input type="submit" >
+    </form>
+
+
+
+    <script src="form.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+let a; this is declaration
+let a = 2; this is declaration and initialization
+
+Keyword 	Re-declaration	   Re-assignment
+var	        ✅ Allowed	      ✅ Allowed
+let	        ❌ Not allowed	  ✅ Allowed
+const	    ❌ Not allowed	  ❌ Not allowed (but object/array contents can change)
+
+var - it has function scope 
+
+
+
+EventListener-
+
+let s = document.querySelector("span")
+s.addEventListener("click", function(){})
+
+click - Event
+function - listener
+
+
+value for - inputs
+textContent for - like h1,p,div etc. element
+
+[*]
+
+1- Local Storage - store data in browser, if we closed the browser still data stored
+2- Session Storage - store data temporarily, whenever the tab closed data is deleted.
+3- cookie - Small data sent with every HTTP request. 
+
+//que- why we can't save arrays & objects but we save string in localStorage
+//Ans - Because localStorage only stores strings and their APIs built like that. 
+To save arrays or objects, you must first convert them using JSON.stringify() and retrieve them with JSON.parse().
