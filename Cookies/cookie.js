@@ -14,3 +14,4 @@ console.log(localStorage);
 let fr = JSON.parse(localStorage.getItem("friends"));
 console.log(fr);
 
+//

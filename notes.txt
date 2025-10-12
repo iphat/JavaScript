@@ -28,6 +28,17 @@ textContent for - like h1,p,div etc. element
 2- Session Storage - store data temporarily, whenever the tab closed data is deleted.
 3- cookie - Small data sent with every HTTP request. 
 
-//que- why we can't save arrays & objects but we save string in localStorage
-//Ans - Because localStorage only stores strings and their APIs built like that. 
+Question1 - why we can't save arrays & objects but we save string in localStorage
+Ans - Because localStorage only stores strings and their APIs built like that. 
 To save arrays or objects, you must first convert them using JSON.stringify() and retrieve them with JSON.parse().
+
+
+Question2- const card = document.createElement('div');
+ (1)card.classList.add("card"); 
+ (1)card.className = 'card';
+  diff bw both of them?
+
+Ans- 
+Method	         Adds Class	        Overwrites Existing	       Use Case
+classList.add()	   ✅ Yes	       ❌ No	                  1 or more classes safely
+className = "..."	✅ Yes	        ✅ Yes	              Set or reset all classes at once  
