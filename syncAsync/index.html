@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-gray-300">
+  <div class=" min-h-screen flex flex-col items-center justify-center gap-6 p-6">
+    
+    <!-- Card Row -->
+    <div class="users card-row flex gap-6 justify-center flex-wrap">
+      <!-- Static HTML Card -->
+      <div class="max-w-sm w-full bg-white rounded-xl shadow-md overflow-hidden">
+        <div class="p-4 flex items-start gap-4">
+          <img class="h-20 w-20 rounded-full object-cover ring-2 ring-white shadow-sm" src="https://i.pravatar.cc/150?img=32" alt="User avatar">
+          <div class="flex-1">
+            <div class="flex items-center justify-between">
+              <div>
+                <h2 class="text-lg font-semibold text-gray-900">Jane Doe</h2>
+                <p class="text-sm text-gray-500">cd12@gmail.com</p>
+              </div>
+            </div>
+            <div class="mt-4 flex gap-3">
+              <button class="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 focus:outline-none">Follow</button>
+              <button class="px-4 py-2 border border-gray-200 text-sm rounded-lg hover:bg-gray-50">Message</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Refresh Button -->
+    <button id="refreshBtn" type="button" title="Refresh" aria-label="Refresh" class="flex items-center gap-3 px-8 py-4 bg-blue-600 text-white text-xl font-semibold rounded-full shadow-lg hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-300 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="23 4 23 10 17 10"></polyline>
+        <polyline points="1 20 1 14 7 14"></polyline>
+        <path d="M3.51 9a9 9 0 0114.36-3.36"></path>
+        <path d="M20.49 15a9 9 0 01-14.36 3.36"></path>
+      </svg>
+      <span>Refresh</span>
+    </button>
+
+  </div>
+
+<!-- 
+  <script src="script.js"></script>
+  <script src="promises.js"></script> -->
+  <script defer src="API.js"></script>
+</body>
+</html>
+
