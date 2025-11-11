@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        color: white;
+        background-color: black;
+    }
+    h1{
+        text-align: center;
+        padding:20px;
+    }
+    .container{
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .spacer{
+        height: 600px;
+    }
+    .lazy-img{
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 30px 0;
+        /* opacity: 0; */
+        transition: opacity 0.5s ease;
+    }
+    .lazy-img .loaded{
+        opacity: 1;
+    }
+</style>
+<body>
+    <h1>Loading Images with Intersection Observer</h1>
+<!-- if we use "data" before any attribute you can add custom hidden data to any element -->
+    <div class="container">
+        <p>Scroll down to see images load only when they enter the viewport</p>
+
+        <div class="spacer"></div>
+        <img data-src="images/1.avif" class="lazy-img" alt="Image-1">
+
+        <div class="spacer"></div>
+        <!-- bez of data image will not shown -->
+        <img data-src="images/2.avif" class="lazy-img" alt="Image-2">
+
+        <div class="spacer"></div>
+        <img data-src="images/3.avif" class="lazy-img" alt="Image-3">
+
+        <div class="spacer"></div>
+        <img data-src="images/4.avif" class="lazy-img" alt="Image-4">
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
