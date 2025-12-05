@@ -16,10 +16,10 @@ let object = {
     age: 26,
 };
 function abcd(a,b,c){
-    console.log(this.name,a,b,c);//here 'this' is 'object'
+    console.log(this.name,a,b,c);//here 'this' is 'object' and  a=1,b=5,c=9
 }
 //call
-abcd.call(object,1,5,9);
+abcd.call(object,1,5,9);//here a=1,b=5,c=9
 //apply
 abcd.apply(object, [33,44,55]);
 //bind
