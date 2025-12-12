@@ -36,3 +36,15 @@ async function abcd(){
     }
 }
 abcd();
+
+//fetch -built‑in JavaScript function used to make network requests (like calling an API) and get data from a server.
+fetch(`https://randomuser.me/api/?inc=name,gender`)
+.then((raw) => raw.json())
+
+.then((data) => {
+    console.log(data.results[0].name.first);
+})
+.catch((err) => {
+    console.log(err);
+});
+
