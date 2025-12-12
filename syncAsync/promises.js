@@ -1,6 +1,13 @@
-//I believe clear communication and empathy are key to building strong professional relationships. "I'm always eager to take initiative and help the team stay organized and focused on goals."
 
-//promises
+//promises - The Promise object represents the eventual result (success or failure) of an asynchronous operation
+.then((raw) => raw.json())
+
+.then((data) => {
+    console.log(data.results[0].name.first);
+})
+.catch((err) => {
+    console.log(err);
+});
 let p = new Promise(function(resolve, reject){
     setTimeout(() => {
     // resolve();
