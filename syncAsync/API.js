@@ -1,7 +1,7 @@
 // //Fetch API + HTTP Basics
 // // Download jsonview
 
-
+//fetch -built‑in JavaScript function used to make network requests (like calling an API) and get data from a server.
 function getUsers(){
 
     fetch("https://randomuser.me/api/?results=1")
